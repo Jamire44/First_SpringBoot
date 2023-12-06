@@ -1,8 +1,12 @@
 package com.jetbrains.jamie.photoz.clone;
 
+import jakarta.validation.constraints.NotEmpty;
+import org.springframework.lang.NonNull;
+
 public class Photo {
     private String id;
 
+    @NotEmpty
     private String fileName;
 
     public Photo(){
