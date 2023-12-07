@@ -1,5 +1,6 @@
 package com.jetbrains.jamie.photoz.clone;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;
 import org.springframework.lang.NonNull;
 
@@ -8,6 +9,10 @@ public class Photo {
 
     @NotEmpty
     private String fileName;
+
+    @JsonIgnore
+    private byte[] data;
+
 
     public Photo(){
 
@@ -20,6 +25,14 @@ public class Photo {
 
     // raw data
 
+
+    public byte[] getData() {
+        return data;
+    }
+
+    public void setData(byte[] data) {
+        this.data = data;
+    }
 
     public String getId() {
         return id;
