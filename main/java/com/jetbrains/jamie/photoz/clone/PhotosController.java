@@ -48,12 +48,7 @@ public class PhotosController {
     @PostMapping("/photos/")
     public Photo create(@RequestPart("data") MultipartFile file) throws IOException {
 
-        Photo photo = new Photo();
-        photo.setId(UUID.randomUUID().toString());
-        photo.setFileName(file.getOriginalFilename());
-        photo.setData(file.getBytes());
-        photosService.put(photo.getId(), photo);
-        return photo;
+       return photosService.save(file.getOriginalFilename(), file.getContentType(), file.getBytes());
     }
 
 

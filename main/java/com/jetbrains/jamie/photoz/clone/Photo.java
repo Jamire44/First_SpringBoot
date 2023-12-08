@@ -5,10 +5,13 @@ import jakarta.validation.constraints.NotEmpty;
 import org.springframework.lang.NonNull;
 
 public class Photo {
+
     private String id;
 
     @NotEmpty
     private String fileName;
+
+    private String contentType;
 
     @JsonIgnore
     private byte[] data;
@@ -25,6 +28,14 @@ public class Photo {
 
     // raw data
 
+
+    public String getContentType() {
+        return contentType;
+    }
+
+    public void setContentType(String contentType) {
+        this.contentType = contentType;
+    }
 
     public byte[] getData() {
         return data;
