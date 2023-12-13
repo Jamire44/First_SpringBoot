@@ -1,9 +1,10 @@
-package com.jetbrains.jamie.photoz.clone;/*
+package com.jetbrains.jamie.photoz.clone.service;/*
 //Jamie Doyle
 //20:56:07/12/2023
 //Project : 
 */
 
+import com.jetbrains.jamie.photoz.clone.model.Photo;
 import org.springframework.stereotype.Service;
 
 import java.util.Collection;

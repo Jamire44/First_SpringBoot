@@ -1,4 +1,4 @@
-package com.jetbrains.jamie.photoz.clone;
+package com.jetbrains.jamie.photoz.clone.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotEmpty;

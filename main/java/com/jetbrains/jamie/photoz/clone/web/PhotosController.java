@@ -1,7 +1,8 @@
-package com.jetbrains.jamie.photoz.clone;
+package com.jetbrains.jamie.photoz.clone.web;
 
 
-import jakarta.validation.Valid;
+import com.jetbrains.jamie.photoz.clone.model.Photo;
+import com.jetbrains.jamie.photoz.clone.service.PhotosService;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -9,9 +10,6 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.io.IOException;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.UUID;
 
 @RestController
 public class PhotosController {

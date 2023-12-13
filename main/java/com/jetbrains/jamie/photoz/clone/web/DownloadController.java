@@ -1,9 +1,11 @@
-package com.jetbrains.jamie.photoz.clone;/*
+package com.jetbrains.jamie.photoz.clone.web;/*
 //Jamie Doyle
 //20:49:07/12/2023
 //Project : 
 */
 
+import com.jetbrains.jamie.photoz.clone.model.Photo;
+import com.jetbrains.jamie.photoz.clone.service.PhotosService;
 import org.springframework.http.*;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
